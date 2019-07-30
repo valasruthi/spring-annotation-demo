@@ -1,5 +1,6 @@
 package com.stackroute.domain;
 
+
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.ComponentScan;
 import org.springframework.context.annotation.Configuration;
@@ -29,4 +30,11 @@ public class BeanConfig {
     return actor3;
 
   }
+
+  @Bean
+  public BeanPostProcessorDemoBean beanPostProcessorDemoBean() {
+    BeanPostProcessorDemoBean beanPostProcessorDemoBean=new BeanPostProcessorDemoBean();
+    return beanPostProcessorDemoBean;
+  }
+
 }
